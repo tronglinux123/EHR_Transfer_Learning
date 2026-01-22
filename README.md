@@ -57,7 +57,7 @@ Notebooks:
 - **ROS + XGBClassifier + EHR gives the best Precision–Recall trade-off**
 - EHR features significantly improve detection of rare CRDs
 
-Metrics: Accuracy, Precision, Recall
+Metrics: Accuracy, Precision, Recall, F1-score
 
 ---
 
