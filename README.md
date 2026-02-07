@@ -17,21 +17,21 @@ Evaluation on multiple CRD prediction tasks
 
 ## Data Sources and Access Notice
 
-This project relies on the MIMIC-IV and MIMIC-CXR datasets, which contain a wide range of clinical records and chest X-ray images collected from intensive care unit patients.
+This project relies on the [MIMIC-IV](https://physionet.org/content/mimiciv/3.1/) and
+[MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.1.0/) datasets, which contain a wide range
+of clinical records and chest X-ray images collected from intensive care unit patients.
 
-⚠️ Important Notice on Data Access
+⚠️ **Important Notice on Data Access**
 
-The datasets used in this project are not publicly downloadable.
+The datasets used in this project are **not publicly downloadable**.
 
 Access to MIMIC-IV and MIMIC-CXR requires:
+- Completion of the official
+  [PhysioNet credentialed health data training](https://physionet.org/about/citi-course/)
+- An approved
+  [PhysioNet account](https://physionet.org/)
 
-Completion of the official PhysioNet credentialed health [data training](https://physionet.org/content/mimiciv/view-required-training/2.2/#1)
-
-An approved PhysioNet account
-
-Users must comply with all data use agreements and ethical guidelines defined by PhysioNet.
-
-For more information, please refer to the PhysioNet website.
+All users must comply with the data use agreements and ethical guidelines defined by PhysioNet.
 ---
 
 ## Pipeline (Baseline – Instructor)
@@ -50,12 +50,12 @@ Notebooks:
 
 ## Data Augmentation
 
-### Model 1 – SMOTE + XGBoost  
+### Model 1 – Synthetic Minority Over-sampling Technique (SMOTE) + XGBoost  
 **Contributor:** Trần Thành Trọng  
 - SMOTE on image features  
 - XGBClassifier / XGBRegressor for EHR reconstruction  
 
-### Model 2 – ROS + XGBClassifier  
+### Model 2 – Random Over-Sampling (ROS) + XGBClassifier  
 **Contributor:** Bùi Đăng Khoa
 - Random Over-Sampling on training set only  
 - Evaluated with:
